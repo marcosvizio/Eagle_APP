@@ -4,7 +4,7 @@ import handlebars from 'express-handlebars';
 import * as dotenv from 'dotenv';
 
 import viewsRouter from './routes/views.router.js';
-import participantsRouter from './routes/participants.router.js'
+import usersRouter from './routes/users.router.js';
 import __dirname from './utils.js';
 
 dotenv.config();
@@ -27,5 +27,5 @@ app.engine('handlebars', handlebars.engine());
 app.set('views', `${__dirname}/views`)
 app.set('view engine', 'handlebars')
 
-app.use('/api/participants', participantsRouter)
+app.use('/api/users', usersRouter)
 app.use('/', viewsRouter)
