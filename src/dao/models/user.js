@@ -8,7 +8,7 @@ const schema = new mongoose.Schema({
     password: String,
     birthdate: String,
     email: String,
-    level: {
+    role: {
         type: String,
         default: "usuario"
     }

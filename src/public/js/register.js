@@ -19,7 +19,7 @@ form.addEventListener('submit', async event => {
         Swal.fire({
             icon: 'error',
             title: 'Error!',
-            text: 'El email ingresado ya existe en otro participante. En el caso de que quieras modificar tus datos. Comunicate con nosotros en nuestras redes.'
+            text: 'El email ingresado ya existe en otro usuario. En el caso de que quieras modificar tus datos. Comunicate con nosotros desde Contacto.'
         });
     };
 });
